@@ -1,8 +1,9 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "asboy2035-fonts",
+      "name": "@a35hie/fonts",
       "dependencies": {
         "clean-css": "^5.3.3",
       },

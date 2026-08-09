@@ -1,17 +1,17 @@
 {
-  "name": "asboy2035-fonts",
-  "version": "1.1.0",
+  "name": "@a35hie/fonts",
+  "version": "1.1.1",
   "description": "Some hosted fonts.",
-  "homepage": "https://github.com/asboy2035/fonts#readme",
+  "homepage": "https://github.com/a35hie/Fonts#readme",
   "bugs": {
-    "url": "https://github.com/asboy2035/fonts/issues"
+    "url": "https://github.com/a35hie/Fonts/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://asboy2035@github.com/asboy2035/fonts.git"
+    "url": "https://github.com/a35hie/Fonts"
   },
   "license": "Apache-2.0",
-  "author": "asboy2035",
+  "author": "a35hie",
   "type": "module",
   "main": "generateCSS.js",
   "scripts": {

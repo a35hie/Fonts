@@ -66,7 +66,7 @@ const folders = fs.readdirSync(
 .filter(dirent => dirent.isDirectory() && dirent.name !== 'css' && !dirent.name.startsWith('.'))
 .map(dirent => dirent.name)
 
-const jsDelivrBaseURL = 'https://cdn.jsdelivr.net/gh/asboy2035/fonts@master' // Your jsDelivr base
+const jsDelivrBaseURL = 'https://cdn.jsdelivr.net/gh/a35hie/Fonts@master' // jsDelivr base for font files
 
 folders.forEach(folderName => {
   const folderPath = path.join(fontsRootDir, folderName)
