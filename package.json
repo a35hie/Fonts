@@ -1,22 +1,19 @@
 {
   "name": "@a35hie/fonts",
-  "version": "1.1.1",
+  "author": "a35hie",
+  "version": "1.2.0",
   "description": "Some hosted fonts.",
-  "homepage": "https://github.com/a35hie/Fonts#readme",
-  "bugs": {
-    "url": "https://github.com/a35hie/Fonts/issues"
-  },
+  "homepage": "https://github.com/a35hie/Fonts",
   "repository": {
     "type": "git",
     "url": "https://github.com/a35hie/Fonts"
   },
   "license": "Apache-2.0",
-  "author": "a35hie",
   "type": "module",
   "main": "generateCSS.js",
   "scripts": {
     "build": "npm run clean && npm run copy-frontend && node generateCSS.js",
-    "copy-frontend": "mkdir css && cp index.html css",
+    "copy-frontend": "mkdir css && cp index.html css && cp favicon.ico css",
     "clean": "rm -rf css"
   },
   "dependencies": {
