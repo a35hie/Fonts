@@ -2,7 +2,7 @@ import * as fs from 'node:fs'
 import * as path from 'node:path'
 import CleanCSS from 'clean-css'
 
-const fontsRootDir = './'              // Root where font folders live
+const fontsRootDir = './'                // Root where font folders live
 const cssOutputDir = path.join('css')  // Output CSS folder
 
 // Helpers
@@ -73,7 +73,7 @@ folders.forEach(folderName => {
   const files = fs.readdirSync(folderPath).filter(f => /\.(woff2?|ttf|otf|eot|svg)$/i.test(f))
 
   if (files.length === 0) {
-    console.log(`No fonts found in folder: ${folderName}, skipping.`)
+    console.log(`× No fonts found in folder: ${folderName}, skipping.`)
     return
   }
 
@@ -108,5 +108,5 @@ folders.forEach(folderName => {
   const minifiedCSS = new CleanCSS().minify(cssContent).styles
   fs.writeFileSync(cssFilePath, minifiedCSS)
 
-  console.log(`✅ Created CSS for "${folderName}" → ${cssFilePath}`)
+  console.log(`✓ Created CSS for "${folderName}" → ${cssFilePath}`)
 })
